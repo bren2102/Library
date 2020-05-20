@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  border: none;
+}
+
+#library_books {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 4);
+  padding: 10px;
+}
+
+.new_book {
+  width: 30%;
+  padding: 10px;
+  background: skyblue;
+}
+
+.library_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+form label {
+  display: block;
+  margin: 7px 0;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 6px 5px;
+}
+
+#submit_btn {
+  font-size: 20px;
+  display: block;
+  height: 40px;
+  width: 100%;
+}
+
+#submit_btn:hover {
+  cursor: pointer;
+}
