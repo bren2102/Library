@@ -100,3 +100,15 @@ form input[type="text"] {
 .book h3.title {
   font-size: 30px;
 }
+
+.book button {
+  padding: 5px 0;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.book button:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}

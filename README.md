@@ -10,7 +10,8 @@
 
 ## Live Demo
 
-[Live Demo Version](https://morning-sea-95076.herokuapp.com/)
+[Live Demo Version](https://raw.githack.com/bren2102/library/feature/index.html)
+![Preview](assets/img/preview.png)
 
 ## Authors
 
