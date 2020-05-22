@@ -1,27 +1,70 @@
 * {
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+input[type="submit"], button {
   border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Jost', sans-serif;
+}
+
+.inline_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 40px;
+}
+
+.inline_header .logo {
+  width: 130px;
+}
+
+main {
+  padding: 40px;
+}
+
+.main-title {
+  font-size: 45px;
+  letter-spacing: 1px;
+  line-height: 50px;
+}
+
+.main-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.main-description img {
+  width: 100%;
 }
 
 #library_books {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 70%;
+  width: 100%;
   flex-wrap: wrap;
 }
 
 .book {
   display: flex;
   flex-direction: column;
-  width: calc(100% / 4);
+  width: calc((100% - 50px )/ 3);
   padding: 10px;
+  margin: 10px calc(50px / 3 / 3);
+  border: 1px #27272731 solid;
+  box-shadow: 1px 1px #27272731;
+  z-index: 10;
 }
 
 .new_book {
-  width: 30%;
-  padding: 10px;
-  background: skyblue;
+  width: 100%;
+  padding: 30px;
 }
 
 .library_wrapper {
@@ -31,21 +74,29 @@
 
 form label {
   display: block;
-  margin: 7px 0;
+  margin: 14px 0;
 }
 
 form input[type="text"] {
   width: 100%;
   padding: 6px 5px;
+  border: none;
+  border-bottom: 1px solid black;
 }
 
 #submit_btn {
-  font-size: 20px;
+  font-size: 18px;
   display: block;
   height: 40px;
   width: 100%;
+  background: black;
+  color: white;
 }
 
 #submit_btn:hover {
   cursor: pointer;
+}
+
+.book h3.title {
+  font-size: 30px;
 }
