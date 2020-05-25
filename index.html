@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="inline_header">
+      <img class="logo" src="assets/img/booklin_logo.png" alt="booklin logo">
+    </nav>
+  </header>
+  <main>
+    <div class="library_wrapper">
+      <div class="main-description">
+        <h1 class="main-title">Look for every trending book in one place</h1>
+        <!-- <img src="assets/img/offer_subscribe_booklin.png" alt="offer special booklin subscription"> -->
+      </div>
+      <div class="new_book">
+        <form class="new_book_form" id="form_new_book" action="#">
+          <label for="title" >Title</label>
+          <input id="title" type="text" required>
+          <label for="author" >Author</label>
+          <input id="author" type="text" required>
+          <label for="num_pages" >Number of pages</label>
+          <input id="num_pages" type="text" required>
+          <label for="read" >Read?</label>
+          <label for="read_yes" >
+            <input type="radio" id="read_yes" name="read" value="yes" >
+            YES
+          </label>
+          <label for="read_no" >
+          <input type="radio" id="read_no" name="read" value="no">
+            NO
+          </label>
+          <input id="submit_btn" type="submit" value="Add book" >
+        </form>
+      </div>
+    </div>
+    <div id="library_books">
+    </div>
+  </main>
+  
+  
+</body>
+<script src="app.js" type="text/javascript"></script>
+</html>
